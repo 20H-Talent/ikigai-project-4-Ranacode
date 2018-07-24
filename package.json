@@ -1,0 +1,23 @@
+{
+  "name": "ikigai-project-4-ranacode",
+  "version": "0.1.0",
+  "description": "Style guide project4 20h-talent-ikigai",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass scss/styles.scss -o css",
+    "css:watch": "npm run css && node-sass scss/styles.scss -wo css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/20H-Talent/ikigai-project-4-Ranacode.git"
+  },
+  "author": "Ranacode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/20H-Talent/ikigai-project-4-Ranacode/issues"
+  },
+  "homepage": "https://github.com/20H-Talent/ikigai-project-4-Ranacode#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
