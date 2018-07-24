@@ -1,0 +1,3 @@
+@mixin container-auto($width) {
+  width: $width - $base-padding * 2;
+}

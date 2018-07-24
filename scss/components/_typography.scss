@@ -1,0 +1,25 @@
+.container {
+  padding-right: $base-padding;
+  padding-left: $base-padding;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    @include container-auto($tablet-width);
+  }
+}
+@media (min-width: $large-tablet-width) {
+  .container {
+    @include container-auto($large-tablet-width);
+  }
+}
+@media (min-width: $desktop-width) {
+  .container {
+    @include container-auto($desktop-width);
+  }
+}
+.link {
+  color: $primary-color;
+}

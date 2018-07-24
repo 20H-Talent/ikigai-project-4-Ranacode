@@ -1,3 +1,24 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 738px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 962px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+
+.link {
+  color: #58e1c1; }
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
@@ -19,7 +40,8 @@ pre {
   font-size: 1em; }
 
 a {
-  background-color: transparent; }
+  background-color: transparent;
+  text-decoration: none; }
 
 abbr[title] {
   border-bottom: none;
