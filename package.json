@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "css": "node-sass scss/styles.scss -o css",
+    "css:build": "npm run css | postcss css/styles.css -u autoprefixer -r",
     "css:watch": "npm run css && node-sass scss/styles.scss -wo css"
   },
   "repository": {
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/20H-Talent/ikigai-project-4-Ranacode#readme",
   "dependencies": {
-    "node-sass": "^4.9.2"
+    "autoprefixer": "^9.0.1",
+    "node-sass": "^4.9.2",
+    "postcss": "^7.0.1",
+    "postcss-cli": "^6.0.0"
   }
 }

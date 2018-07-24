@@ -1,10 +1,15 @@
 .container {
+  max-width: 1200px;
+  width: 100%;
   padding-right: $base-padding;
   padding-left: $base-padding;
   margin-right: auto;
   margin-left: auto;
 }
 
+.row {
+  display: flex;
+}
 @media (min-width: $tablet-width) {
   .container {
     @include container-auto($tablet-width);
