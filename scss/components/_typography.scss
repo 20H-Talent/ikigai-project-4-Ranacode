@@ -1,3 +1,23 @@
 .link {
   color: $primary-color;
 }
+
+.blockquote {
+  border-left: 10px solid $primary-color;
+  border-radius: 5px;
+  font-family: $primary-font;
+  font-style: italic;
+  color: $text-color;
+  font-size: 1.5em;
+  padding: 0.2em 1.8em;
+  text-align: justify;
+  &:before {
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    font-size: 10em;
+    content: open-quote;
+    line-height: 0.1em;
+  }
+}

@@ -36,6 +36,24 @@
 .link {
   color: #58e1c1; }
 
+.blockquote {
+  border-left: 10px solid #58e1c1;
+  border-radius: 5px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-style: italic;
+  color: #808080;
+  font-size: 1.5em;
+  padding: 0.2em 1.8em;
+  text-align: justify; }
+  .blockquote:before {
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    font-size: 10em;
+    content: open-quote;
+    line-height: 0.1em; }
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%; }
