@@ -6,8 +6,20 @@
   margin-right: auto;
   margin-left: auto; }
 
-.row {
-  display: flex; }
+.grid__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.grid__col {
+  flex: 1; }
+
+.grid__col--12 {
+  flex-basis: 100%; }
+
+.centered {
+  display: block;
+  text-align: center; }
 
 @media (min-width: 768px) {
   .container {

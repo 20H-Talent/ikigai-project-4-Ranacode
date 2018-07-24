@@ -1,0 +1,43 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-right: $base-padding;
+  padding-left: $base-padding;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid__col {
+  flex: 1;
+}
+
+.grid__col--12 {
+  flex-basis: 100%;
+}
+
+.centered {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    @include container-auto($tablet-width);
+  }
+}
+@media (min-width: $large-tablet-width) {
+  .container {
+    @include container-auto($large-tablet-width);
+  }
+}
+@media (min-width: $desktop-width) {
+  .container {
+    @include container-auto($desktop-width);
+  }
+}
