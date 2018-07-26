@@ -5,21 +5,22 @@
   padding-left: $base-padding;
   margin-right: auto;
   margin-left: auto;
+  //FLUID CONTAINER
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
 }
 
 .grid__row {
   display: flex;
   flex-direction: row;
+  align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
-
-.grid__col {
-  flex: 1;
-}
-
-.grid__col--12 {
-  flex-basis: 100%;
-}
+//MINI MIXING TO CALCULATE THE COLUMN WIDTH AUTOMATIC
+@include grid__col--x;
 
 .centered {
   display: block;

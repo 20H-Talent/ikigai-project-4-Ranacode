@@ -8,19 +8,19 @@ nav[role="navigation"] {
     .nav__item {
       text-align: center;
       color: $text-color;
-      border-radius: 6px;
+      border-radius: 3px;
       padding: 0.5em;
       display: block;
       width: 100%;
       max-width: 93%;
-      padding: 0.5em;
+      padding: 0.7em;
       transition-property: color, background-color;
       transition-duration: 300ms;
       transition-timing-function: ease;
       font-weight: bold;
 
       &:hover {
-        color: white;
+        color: #fafafa;
         background-color: $primary-color;
       }
       a {

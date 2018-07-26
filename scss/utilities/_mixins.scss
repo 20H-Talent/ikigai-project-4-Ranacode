@@ -1,7 +1,9 @@
+//CALC THE CONTAINER WIDTH AUTO BASED ON WINDOWS WIDTH
 @mixin container-auto($width) {
   width: $width - $base-padding * 2;
 }
 
+//THEME BUTTON CONSTRUCTOR
 @mixin theme-button($background-color, $width: 800) {
   background: none;
   cursor: pointer;
@@ -15,6 +17,12 @@
   font-size: 1.25em;
   text-transform: uppercase;
   background-color: $background-color;
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+  &:hover {
+    background-color: darken($background-color, 10%);
+  }
   @if $width <= $tablet-width {
     display: block;
     vertical-align: middle;
@@ -24,6 +32,7 @@
   }
 }
 
+//THIS MIXING SETUP THE BEHAVIOUR FOR EACH IMAGE TYPE
 @mixin theme-img($type) {
   display: block;
   max-width: 100%;
@@ -39,5 +48,17 @@
   } @else {
     border-radius: 50%;
     vertical-align: middle;
+  }
+}
+
+//THIS MIXING BUILD THE GRID COLUMNS
+$columns: 12;
+$grid_cols: 12;
+
+@mixin grid__col--x {
+  @for $i from 1 through $columns {
+    .grid__col--#{$i} {
+      flex-basis: (100 / ($grid_cols / $i)) * 1%;
+    }
   }
 }
