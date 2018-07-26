@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -33,6 +33,37 @@
   .container {
     width: 1170px; } }
 
+@media (min-width: 1500px) {
+  .container {
+    width: 1470px; } }
+
+nav[role="navigation"] ul.nav {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif; }
+  nav[role="navigation"] ul.nav .nav__item {
+    text-align: center;
+    color: #808080;
+    border-radius: 6px;
+    padding: 0.5em;
+    display: block;
+    width: 100%;
+    max-width: 93%;
+    padding: 0.5em;
+    transition-property: color, background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    font-weight: bold; }
+    nav[role="navigation"] ul.nav .nav__item:hover {
+      color: white;
+      background-color: #58e1c1; }
+    nav[role="navigation"] ul.nav .nav__item a {
+      color: inherit;
+      text-decoration: inherit;
+      background: none; }
+
 .link {
   color: #58e1c1; }
 
@@ -53,6 +84,191 @@
     font-size: 10em;
     content: open-quote;
     line-height: 0.1em; }
+
+.btn--default {
+  background: none;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  color: #fafafa;
+  border-radius: 6px;
+  padding: 0.9em 3.7em 0.7em 3.7em;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  background-color: #51ddfc; }
+
+.btn--success {
+  background: none;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  color: #fafafa;
+  border-radius: 6px;
+  padding: 0.9em 3.7em 0.7em 3.7em;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  background-color: #63cc82; }
+
+.btn--error {
+  background: none;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  color: #fafafa;
+  border-radius: 6px;
+  padding: 0.9em 3.7em 0.7em 3.7em;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  background-color: #e4757a; }
+
+.btn--warning {
+  background: none;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  color: #fafafa;
+  border-radius: 6px;
+  padding: 0.9em 3.7em 0.7em 3.7em;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  background-color: #fd7856; }
+
+.btn--info {
+  background: none;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  color: #fafafa;
+  border-radius: 6px;
+  padding: 0.9em 3.7em 0.7em 3.7em;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  background-color: #927bc1; }
+
+@media (max-width: 768px) {
+  .btn--default {
+    background: none;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+    color: #fafafa;
+    border-radius: 6px;
+    padding: 0.9em 3.7em 0.7em 3.7em;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    background-color: #51ddfc;
+    display: block;
+    vertical-align: middle;
+    margin: 1.4em auto;
+    width: 100%;
+    max-width: 93%; }
+  .btn--success {
+    background: none;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+    color: #fafafa;
+    border-radius: 6px;
+    padding: 0.9em 3.7em 0.7em 3.7em;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    background-color: #63cc82;
+    display: block;
+    vertical-align: middle;
+    margin: 1.4em auto;
+    width: 100%;
+    max-width: 93%; }
+  .btn--error {
+    background: none;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+    color: #fafafa;
+    border-radius: 6px;
+    padding: 0.9em 3.7em 0.7em 3.7em;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    background-color: #e4757a;
+    display: block;
+    vertical-align: middle;
+    margin: 1.4em auto;
+    width: 100%;
+    max-width: 93%; }
+  .btn--warning {
+    background: none;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+    color: #fafafa;
+    border-radius: 6px;
+    padding: 0.9em 3.7em 0.7em 3.7em;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    background-color: #fd7856;
+    display: block;
+    vertical-align: middle;
+    margin: 1.4em auto;
+    width: 100%;
+    max-width: 93%; }
+  .btn--info {
+    background: none;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+    color: #fafafa;
+    border-radius: 6px;
+    padding: 0.9em 3.7em 0.7em 3.7em;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    background-color: #927bc1;
+    display: block;
+    vertical-align: middle;
+    margin: 1.4em auto;
+    width: 100%;
+    max-width: 93%; } }
+
+.img--logo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  height: auto;
+  vertical-align: middle; }
+
+.img--frame {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px; }
+
+.img--avatar {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: middle; }
 
 html {
   line-height: 1.15;
@@ -194,3 +410,6 @@ summary {
 template,
 [hidden] {
   display: none; }
+
+ul {
+  list-style: none; }

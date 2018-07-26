@@ -1,3 +1,43 @@
 @mixin container-auto($width) {
   width: $width - $base-padding * 2;
 }
+
+@mixin theme-button($background-color, $width: 800) {
+  background: none;
+  cursor: pointer;
+  outline: inherit;
+  border: none;
+  color: #fafafa;
+  border-radius: 6px;
+  padding: 0.9em 3.7em 0.7em 3.7em;
+  font-family: $primary-font;
+  font-weight: bold;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  background-color: $background-color;
+  @if $width <= $tablet-width {
+    display: block;
+    vertical-align: middle;
+    margin: 1.4em auto;
+    width: 100%;
+    max-width: 93%;
+  }
+}
+
+@mixin theme-img($type) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  @if $type == "frame" {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+  } @else if($type == "logo") {
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+  } @else {
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+}

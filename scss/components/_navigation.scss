@@ -1,0 +1,33 @@
+nav[role="navigation"] {
+  ul.nav {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    font-family: $primary-font;
+    .nav__item {
+      text-align: center;
+      color: $text-color;
+      border-radius: 6px;
+      padding: 0.5em;
+      display: block;
+      width: 100%;
+      max-width: 93%;
+      padding: 0.5em;
+      transition-property: color, background-color;
+      transition-duration: 300ms;
+      transition-timing-function: ease;
+      font-weight: bold;
+
+      &:hover {
+        color: white;
+        background-color: $primary-color;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+        background: none;
+      }
+    }
+  }
+}

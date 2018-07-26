@@ -1,0 +1,39 @@
+.btn {
+  &--default {
+    @include theme-button($default-color);
+  }
+  &--success {
+    @include theme-button($success-color);
+  }
+  &--error {
+    @include theme-button($error-color);
+  }
+  &--warning {
+    @include theme-button($warning-color);
+  }
+  &--info {
+    @include theme-button($info-color);
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .btn {
+    &--default {
+      @include theme-button($default-color, $tablet-width);
+    }
+    &--success {
+      @include theme-button($success-color, $tablet-width);
+    }
+    &--error {
+      @include theme-button($error-color, $tablet-width);
+    }
+    &--warning {
+      @include theme-button($warning-color, $tablet-width);
+    }
+    &--info {
+      @include theme-button($info-color, $tablet-width);
+    }
+  }
+}
+.theme__colors {
+}
