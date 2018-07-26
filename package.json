@@ -6,7 +6,7 @@
   "scripts": {
     "css": "node-sass scss/styles.scss -o css",
     "css:build": "npm run css | postcss css/styles.css -u autoprefixer -r",
-    "css:watch": "npm run css && node-sass scss/styles.scss -wo css"
+    "css:watch": "npm run css:build && node-sass scss/styles.scss -wo css"
   },
   "repository": {
     "type": "git",

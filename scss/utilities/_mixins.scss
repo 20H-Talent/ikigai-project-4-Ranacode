@@ -52,13 +52,33 @@
 }
 
 //THIS MIXING BUILD THE GRID COLUMNS
-$columns: 12;
-$grid_cols: 12;
-
 @mixin grid__col--x {
-  @for $i from 1 through $columns {
-    .grid__col--#{$i} {
-      flex-basis: (100 / ($grid_cols / $i)) * 1%;
+  @for $col from 1 through $columns {
+    .grid__col--#{$col} {
+      @if $col != 12 {
+        flex-basis: (100 / ($grid_cols / $col)) - $gutter_percent * 1%;
+      } @else {
+        flex-basis: (100 / ($grid_cols / $col)) * 1%;
+      }
+      &.theme__colors {
+        text-align: center;
+        border-radius: 4px;
+        @if ($col == 3) {
+          background-color: $purple;
+        } @else if ($col == 12 or $col == 4) {
+          background-color: $light-blue;
+        } @else if $col == 5 {
+          background-color: $light-green;
+        } @else if $col == 6 {
+          background-color: $dark-blue;
+        } @else if $col == 7 {
+          background-color: $pink;
+        } @else if $col == 8 {
+          background-color: $dark-pink;
+        }
+      }
     }
   }
 }
+
+//12, 6, 4, 3, 5, 8, 7
