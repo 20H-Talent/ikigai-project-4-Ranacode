@@ -22,3 +22,12 @@
     line-height: 0.1em;
   }
 }
+
+.headline {
+  &--primary {
+    @include headline--("primary");
+  }
+  &--secondary {
+    @include headline--("secondary");
+  }
+}

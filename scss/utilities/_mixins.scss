@@ -40,7 +40,7 @@
   @if $type == "frame" {
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
+    padding: 13px;
   } @else if($type == "logo") {
     display: inline-block;
     height: auto;
@@ -81,4 +81,16 @@
   }
 }
 
-//12, 6, 4, 3, 5, 8, 7
+//MIXING FOR HEADLINES
+@mixin headline--($type) {
+  padding: 0.3em;
+  margin: 0.4em;
+
+  @if ($type == "primary") {
+    color: $default-color;
+    font-size: 33px;
+  } @else {
+    color: $text-color;
+    font-size: 20px;
+  }
+}

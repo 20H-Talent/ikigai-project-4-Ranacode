@@ -1,4 +1,5 @@
 nav[role="navigation"] {
+  padding-left: 7.8em;
   ul.nav {
     display: flex;
     flex-direction: column;
@@ -28,6 +29,16 @@ nav[role="navigation"] {
         text-decoration: inherit;
         background: none;
       }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  nav[role="navigation"] {
+    ul.nav {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: no-wrap;
     }
   }
 }
