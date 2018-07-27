@@ -68,6 +68,10 @@
       &.theme__colors {
         text-align: center;
         border-radius: 4px;
+        font-family: $primary-font;
+        padding: 0.6em 0;
+        margin-top: 0.6em;
+        margin-bottom: 0.6em;
         @if ($col == 3) {
           background-color: $purple;
         } @else if ($col == 12 or $col == 4) {

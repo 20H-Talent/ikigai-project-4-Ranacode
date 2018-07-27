@@ -172,19 +172,31 @@ p {
   flex-basis: 7.83333%; }
   .grid__col--1.theme__colors {
     text-align: center;
-    border-radius: 4px; }
+    border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em; }
 
 .grid__col--2 {
   flex-basis: 16.16667%; }
   .grid__col--2.theme__colors {
     text-align: center;
-    border-radius: 4px; }
+    border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em; }
 
 .grid__col--3 {
   flex-basis: 24.5%; }
   .grid__col--3.theme__colors {
     text-align: center;
     border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     background-color: #deb2ee; }
 
 .grid__col--4 {
@@ -192,6 +204,10 @@ p {
   .grid__col--4.theme__colors {
     text-align: center;
     border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     background-color: #80e8d1; }
 
 .grid__col--5 {
@@ -199,6 +215,10 @@ p {
   .grid__col--5.theme__colors {
     text-align: center;
     border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     background-color: #88d9a0; }
 
 .grid__col--6 {
@@ -206,6 +226,10 @@ p {
   .grid__col--6.theme__colors {
     text-align: center;
     border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     background-color: #3fabca; }
 
 .grid__col--7 {
@@ -213,6 +237,10 @@ p {
   .grid__col--7.theme__colors {
     text-align: center;
     border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     background-color: #ec9fa3; }
 
 .grid__col--8 {
@@ -220,36 +248,57 @@ p {
   .grid__col--8.theme__colors {
     text-align: center;
     border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     background-color: #fd9f85; }
 
 .grid__col--9 {
   flex-basis: 74.5%; }
   .grid__col--9.theme__colors {
     text-align: center;
-    border-radius: 4px; }
+    border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em; }
 
 .grid__col--10 {
   flex-basis: 82.83333%; }
   .grid__col--10.theme__colors {
     text-align: center;
-    border-radius: 4px; }
+    border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em; }
 
 .grid__col--11 {
   flex-basis: 91.16667%; }
   .grid__col--11.theme__colors {
     text-align: center;
-    border-radius: 4px; }
+    border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em; }
 
 .grid__col--12 {
   flex-basis: 100%; }
   .grid__col--12.theme__colors {
     text-align: center;
     border-radius: 4px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 0.6em 0;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
     background-color: #80e8d1; }
 
 .centered {
   display: block;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
 @media (min-width: 768px) {
   .container {
