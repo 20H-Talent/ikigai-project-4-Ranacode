@@ -12,6 +12,7 @@
   font-size: 1.5em;
   padding: 0.2em 1.8em;
   text-align: justify;
+  width: 100%;
   &:before {
     display: block;
     position: absolute;
@@ -29,5 +30,11 @@
   }
   &--secondary {
     @include headline--("secondary");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .blockquote {
+    width: auto;
   }
 }

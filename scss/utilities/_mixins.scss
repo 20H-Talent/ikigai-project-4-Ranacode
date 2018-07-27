@@ -20,6 +20,7 @@
   transition-property: background-color;
   transition-duration: 300ms;
   transition-timing-function: ease;
+  margin: 0.5em;
   &:hover {
     background-color: darken($background-color, 10%);
   }
@@ -37,6 +38,8 @@
   display: block;
   max-width: 100%;
   height: auto;
+  padding: 1em 0.3em;
+  margin: 0.5em;
   @if $type == "frame" {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -48,6 +51,8 @@
   } @else {
     border-radius: 50%;
     vertical-align: middle;
+    max-width: 200px;
+    align-self: center;
   }
 }
 
@@ -90,7 +95,23 @@
     color: $default-color;
     font-size: 33px;
   } @else {
-    color: $text-color;
-    font-size: 20px;
+    color: lighten($text-color, 25%);
+    font-size: 18px;
   }
+}
+
+//REMOVE DEFAULT APPEARANCE OF ELEMENTS
+@mixin crossBrowserAppearance($appearance: none) {
+  -webkit-appearance: $appearance;
+  -moz-appearance: $appearance;
+  -ms-appearance: $appearance;
+  -o-appearance: $appearance;
+  appearance: $appearance;
+}
+
+@mixin commonPlaceholderStyles($placeholder-padding) {
+  padding-left: $placeholder-padding;
+  color: $text-color;
+  font-weight: bold;
+  padding-left: 0.5em;
 }
