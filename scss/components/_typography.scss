@@ -37,9 +37,21 @@
   }
 }
 
+.card {
+  margin: 2em auto;
+}
 @media (min-width: $tablet-width) {
   .blockquote {
     width: auto;
     padding: 0.2em 1.8em;
+  }
+
+  .headline {
+    &--primary {
+      text-align: left;
+    }
+    &--secondary {
+      text-align: left;
+    }
   }
 }

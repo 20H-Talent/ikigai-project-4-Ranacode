@@ -122,8 +122,9 @@
 
 //MIXING FOR HEADLINES
 @mixin headline--($type) {
-  padding: 0.3em;
   margin: 0.4em;
+  text-align: left;
+  width: 100%;
 
   @if ($type == "primary") {
     color: $default-color;

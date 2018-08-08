@@ -518,21 +518,30 @@ nav[role="navigation"] {
     line-height: 0.1em; }
 
 .headline--primary {
-  padding: 0.3em;
   margin: 0.4em;
+  text-align: left;
+  width: 100%;
   color: #51ddfc;
   font-size: 33px; }
 
 .headline--secondary {
-  padding: 0.3em;
   margin: 0.4em;
+  text-align: left;
+  width: 100%;
   color: silver;
   font-size: 18px; }
+
+.card {
+  margin: 2em auto; }
 
 @media (min-width: 768px) {
   .blockquote {
     width: auto;
-    padding: 0.2em 1.8em; } }
+    padding: 0.2em 1.8em; }
+  .headline--primary {
+    text-align: left; }
+  .headline--secondary {
+    text-align: left; } }
 
 .form {
   display: flex;
