@@ -21,7 +21,7 @@
   width: 100%;
 }
 //MINI MIXING TO CALCULATE THE COLUMN WIDTH AUTOMATIC
-@include grid__col--x;
+@include responsive-grid__col--x;
 
 .centered {
   display: block;
@@ -33,6 +33,7 @@
   .container {
     @include container-auto($tablet-width);
   }
+  @include grid__col--x;
 }
 @media (min-width: $large-tablet-width) {
   .container {

@@ -1,5 +1,12 @@
 @import "_normalize";
 
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ul {
   list-style: none;
 }
@@ -10,4 +17,11 @@ p {
   font-size: 1.1em;
   line-height: 1.4;
   padding-left: 0.6em;
+  text-align: justify;
+}
+
+@media (min-width: $tablet-width) {
+  p {
+    text-align: none;
+  }
 }

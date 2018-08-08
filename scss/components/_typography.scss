@@ -3,6 +3,9 @@
   color: $primary-color;
 }
 
+.card {
+}
+
 .blockquote {
   border-left: 10px solid $primary-color;
   border-radius: 5px;
@@ -10,9 +13,10 @@
   font-style: italic;
   color: $text-color;
   font-size: 1.5em;
-  padding: 0.2em 1.8em;
+  padding: 0.2em 0.7em;
   text-align: justify;
   width: 100%;
+  margin: 1em auto;
   &:before {
     display: block;
     position: absolute;
@@ -36,5 +40,6 @@
 @media (min-width: $tablet-width) {
   .blockquote {
     width: auto;
+    padding: 0.2em 1.8em;
   }
 }

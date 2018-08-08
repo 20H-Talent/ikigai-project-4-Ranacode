@@ -39,7 +39,7 @@
   max-width: 100%;
   height: auto;
   padding: 1em 0.3em;
-  margin: 0.5em;
+  margin: 1em auto;
   @if $type == "frame" {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -85,6 +85,18 @@
         } @else if $col == 8 {
           background-color: $dark-pink;
         }
+      }
+    }
+  }
+}
+
+@mixin responsive-grid__col--x {
+  @for $col from 1 through $columns {
+    .grid__col--#{$col} {
+      flex-basis: (100 - $gutter_percent * 1%);
+      text-align: center;
+      &.theme__colors {
+        text-align: left;
       }
     }
   }

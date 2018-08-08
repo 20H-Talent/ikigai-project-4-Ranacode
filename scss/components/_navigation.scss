@@ -1,5 +1,6 @@
 nav[role="navigation"] {
-  padding-left: 7.8em;
+  padding: 0;
+  margin-bottom: 5em;
   ul.nav {
     display: flex;
     flex-direction: column;
@@ -35,6 +36,8 @@ nav[role="navigation"] {
 
 @media (min-width: $tablet-width) {
   nav[role="navigation"] {
+    padding-left: 7.8em;
+    margin-bottom: 0;
     ul.nav {
       flex-direction: row;
       justify-content: space-between;

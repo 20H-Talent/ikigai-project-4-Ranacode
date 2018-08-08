@@ -11,3 +11,13 @@
     @include theme-img("avatar");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .img {
+    &--logo,
+    &--frame,
+    &--avatar {
+      margin: 1em auto;
+    }
+  }
+}
