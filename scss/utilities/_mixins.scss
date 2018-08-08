@@ -97,6 +97,24 @@
       text-align: center;
       &.theme__colors {
         text-align: left;
+        border-radius: 4px;
+        font-family: $primary-font;
+        padding: 0.6em 0;
+        margin-top: 0.6em;
+        margin-bottom: 0.6em;
+        @if ($col == 3) {
+          background-color: $purple;
+        } @else if ($col == 12 or $col == 4) {
+          background-color: $light-blue;
+        } @else if $col == 5 {
+          background-color: $light-green;
+        } @else if $col == 6 {
+          background-color: $dark-blue;
+        } @else if $col == 7 {
+          background-color: $pink;
+        } @else if $col == 8 {
+          background-color: $dark-pink;
+        }
       }
     }
   }
